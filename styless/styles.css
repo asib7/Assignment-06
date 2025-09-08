@@ -1,0 +1,416 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #217a3b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 90px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.yellow-button {
+  background-color: #fdd835;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background-color: #d3f2de;
+  text-align: center;
+  padding: 100px 20px;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+  border: 2px solid red;
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Leaf Images */
+.leaf {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  max-height: 400px;
+  z-index: 1;
+}
+
+.left-leaf {
+  left: 0;
+}
+
+.right-leaf {
+  right: 0;
+}
+
+/*  */
+body {
+  background-color: #fcf6f6;
+}
+.container {
+  display: flex;
+  padding: 90px;
+  gap: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  margin-top: 90px;
+}
+
+.sidebar h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sidebar li.active,
+.sidebar li:hover {
+  background-color: #1a8c4a;
+  color: white;
+}
+
+/* Main Content */
+.main {
+  flex: 1;
+}
+
+.main h2 {
+  text-align: center;
+
+  color: #222;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 60px;
+}
+
+/* Card */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 130px;
+  background-color: #ddd;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.card h4 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.tag {
+  background-color: #e2f8ea;
+  color: #1a8c4a;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.price {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Button */
+.add-btn {
+  background-color: #1a8c4a;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #166e3b;
+}
+
+/* Cart */
+.cart {
+  width: 220px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-top: 86px;
+  border-radius: 10px;
+}
+
+.cart h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.cart-item {
+  background-color: #e6f7ed;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-item p {
+  font-size: 13px;
+  color: #555;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/*  */
+
+/* About Section */
+.about-section {
+  padding: 0px 40px 60px;
+  text-align: center;
+
+  margin-left: 91px;
+}
+
+.about-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 400px;
+  border-radius: 12px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+  font-size: 15px;
+  color: #333;
+}
+
+.about-text ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.about-text ul li {
+  margin-bottom: 6px;
+}
+
+/* Impact Section */
+.impact-section {
+  background-color: #cef0d9;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.impact-section h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+}
+
+.impact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.impact-card {
+  background-color: #ffffff;
+  padding: 30px 160px;
+  border-radius: 10px;
+  min-width: 200px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.impact-card h3 {
+  font-size: 22px;
+  color: #1a8c4a;
+  margin-bottom: 10px;
+}
+
+.impact-card p {
+  font-size: 13px;
+  color: #666;
+}
+
+/*  */
+/* Donation Section */
+.donation-section {
+  background-color: #166534;
+
+  text-align: center;
+  color: white;
+  position: relative;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.donation-section h2 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.donation-form {
+  background-color: #1a7a41;
+  padding: 30px;
+  max-width: 400px;
+  margin: auto auto 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 2px solid red;
+}
+
+.donation-form input,
+.donation-form select {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  border: 2px solid red;
+}
+
+.donation-form select {
+  appearance: none;
+}
+
+.donation-form button {
+  padding: 12px;
+  background-color: #facc15; /* Yellow */
+  color: #1a1a1a;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 2px solid red;
+}
+
+.donation-form button:hover {
+  background-color: #eab308;
+}
+
+.footer {
+  text-align: center;
+  font-size: 15px;
+  color: #d1d5db;
+  background-color: #14532d;
+  padding: 20px 0;
+}
